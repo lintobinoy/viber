@@ -7,7 +7,6 @@ from Yukki import db_mem
 def url_markup(videoid, duration, user_id, query, query_type):
     buttons = [
         [
-           
             InlineKeyboardButton(
                 text="🎵 ᎷႮՏᏆᏟ",
                 callback_data=f"MusicStream {videoid}|{duration}|{user_id}",
@@ -44,17 +43,17 @@ def url_markup2(videoid, duration, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🎵 Play Music",
+                text="🎵 𝙋𝙡𝙖𝙮 𝙈𝙪𝙨𝙞𝙘",
                 callback_data=f"MusicStream {videoid}|{duration}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="🎥 Play Video",
+                text="🎥 𝙥𝙡𝙖𝙮 𝙫𝙞𝙙𝙚𝙤",
                 callback_data=f"Choose {videoid}|{duration}|{user_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🗑 Close Search",
+                text="🗑 𝙘𝙡𝙤𝙨𝙚 𝙨𝙚𝙖𝙧𝙘𝙝",
                 callback_data=f"forceclose {videoid}|{user_id}",
             )
         ],
