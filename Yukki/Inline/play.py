@@ -15,6 +15,8 @@ def url_markup(videoid, duration, user_id, query, query_type):
                 text="🎥 ᏙᏆᎠᎬϴ",
                 callback_data=f"Choose {videoid}|{duration}|{user_id}",
             ),
+        ],
+        [ 
             InlineKeyboardButton(
                 text="❮",
                 callback_data=f"slider B|{query_type}|{query}|{user_id}",
