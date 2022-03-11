@@ -17,7 +17,7 @@ def others_markup(videoid, user_id):
         ],
         [
             InlineKeyboardButton(
-                text="✚ Your Playlist",
+                text="✚ 𝙔𝙊𝙐𝙍 𝙋𝙇𝘼𝙔𝙇𝙄𝙎𝙏",
                 callback_data=f"your_playlist {videoid}|{user_id}",
             ),
             InlineKeyboardButton(
