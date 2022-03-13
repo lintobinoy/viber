@@ -223,16 +223,16 @@ def volmarkup():
         ],
         [
             InlineKeyboardButton(text="🔊 𝙃𝙞𝙜𝙝 𝙑𝙤𝙡", callback_data="HV"),
-            InlineKeyboardButton(text="🔈 Amplified Vol", callback_data="VAM"),
+            InlineKeyboardButton(text="🔈 𝘼𝙢𝙥𝙡𝙞𝙛𝙞𝙚𝙙 𝙑𝙤𝙡", callback_data="VAM"),
         ],
         [
             InlineKeyboardButton(
-                text="🔽 Custom Volume 🔽", callback_data="Custommarkup"
+                text="🔽 𝘾𝙪𝙨𝙩𝙤𝙢 𝙑𝙤𝙡𝙪𝙢𝙚 🔽", callback_data="Custommarkup"
             )
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 𝙂𝙤 𝙗𝙖𝙘𝙠", callback_data="settingm")],
     ]
-    return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
+    return f"🔧  **{MUSIC_BOT_NAME} 𝙎𝙚𝙩𝙩𝙞𝙣𝙜𝙨**", buttons
 
 
 def custommarkup():
@@ -249,37 +249,37 @@ def custommarkup():
             InlineKeyboardButton(text="+50", callback_data="PFZ"),
             InlineKeyboardButton(text="-50", callback_data="MFZ"),
         ],
-        [InlineKeyboardButton(text="🔼Custom Volume 🔼", callback_data="AV")],
+        [InlineKeyboardButton(text="🔼 𝘾𝙪𝙨𝙩𝙤𝙢 𝙑𝙤𝙡𝙪𝙢𝙚 🔼", callback_data="AV")],
     ]
-    return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
+    return f"🔧  **{MUSIC_BOT_NAME}  𝙎𝙚𝙩𝙩𝙞𝙣𝙜𝙨**", buttons
 
 
 def usermarkup():
     buttons = [
         [
-            InlineKeyboardButton(text="👥 Everyone", callback_data="EVE"),
-            InlineKeyboardButton(text="🙍 Admins", callback_data="AMS"),
+            InlineKeyboardButton(text="👥 𝙀𝙫𝙚𝙧𝙮𝙤𝙣𝙚", callback_data="EVE"),
+            InlineKeyboardButton(text="🙍 𝘼𝙙𝙢𝙞𝙣𝙨", callback_data="AMS"),
         ],
         [
             InlineKeyboardButton(
-                text="📋 Authorized Users Lists", callback_data="USERLIST"
+                text="📋 𝘼𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙐𝙨𝙚𝙧𝙨 𝙇𝙞𝙨𝙩𝙨", callback_data="USERLIST"
             )
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 𝙂𝙤 𝙗𝙖𝙘𝙠", callback_data="settingm")],
     ]
-    return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
+    return f"🔧  **{MUSIC_BOT_NAME} 𝙎𝙚𝙩𝙩𝙞𝙣𝙜𝙨**", buttons
 
 
 def dashmarkup():
     buttons = [
         [
-            InlineKeyboardButton(text="✔️ Uptime", callback_data="UPT"),
-            InlineKeyboardButton(text="💾 Ram", callback_data="RAT"),
+            InlineKeyboardButton(text="✔️ 𝙐𝙥𝙩𝙞𝙢𝙚", callback_data="UPT"),
+            InlineKeyboardButton(text="💾 𝙍𝙖𝙢", callback_data="RAT"),
         ],
         [
-            InlineKeyboardButton(text="💻 Cpu", callback_data="CPT"),
-            InlineKeyboardButton(text="💽 Disk", callback_data="DIT"),
+            InlineKeyboardButton(text="💻 𝘾𝙥𝙪", callback_data="CPT"),
+            InlineKeyboardButton(text="💽 𝘿𝙞𝙨𝙠", callback_data="DIT"),
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 𝙂𝙤 𝙗𝙖𝙘𝙠", callback_data="settingm")],
     ]
-    return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
+    return f"🔧  **{MUSIC_BOT_NAME} 𝙎𝙚𝙩𝙩𝙞𝙣𝙜𝙨**", buttons
