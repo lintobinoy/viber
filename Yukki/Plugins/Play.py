@@ -406,8 +406,3 @@ async def slider_query_results(_, CallbackQuery):
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
         )
-        for char in mystic
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(0.1)
-      
