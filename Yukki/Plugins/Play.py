@@ -63,10 +63,6 @@ async def play(_, message: Message):
         mystic = await message.reply_text(
             "🔄 𝙋𝙧𝙤𝙘𝙚𝙨𝙨𝙞𝙣𝙜 𝘼𝙪𝙙𝙞𝙤... 𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩!"
         )
-        for char in mystic
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(0.1)
         try:
             read = db_mem[message.chat.id]["live_check"]
             if read:
@@ -410,3 +406,8 @@ async def slider_query_results(_, CallbackQuery):
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
         )
+        for char in mystic
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.1)
+      
