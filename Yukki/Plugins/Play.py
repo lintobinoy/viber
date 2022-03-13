@@ -1,3 +1,4 @@
+import sys,time,os
 import asyncio
 from os import path
 
@@ -29,7 +30,6 @@ from Yukki.Utilities.url import get_url
 from Yukki.Utilities.videostream import start_stream_video
 from Yukki.Utilities.youtube import (get_yt_info_id, get_yt_info_query,
                                      get_yt_info_query_slider)
-
 loop = asyncio.get_event_loop()
 
 
@@ -63,6 +63,10 @@ async def play(_, message: Message):
         mystic = await message.reply_text(
             "🔄 𝙋𝙧𝙤𝙘𝙚𝙨𝙨𝙞𝙣𝙜 𝘼𝙪𝙙𝙞𝙤... 𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩!"
         )
+        for char in mystic
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.1)
         try:
             read = db_mem[message.chat.id]["live_check"]
             if read:
