@@ -8,7 +8,7 @@ from pyrogram.types import Message
 from youtubesearchpython import VideosSearch
 
 from Yukki import MUSIC_BOT_NAME, app
-
+parse_mode="html", disable_web_page_preview=True
 __MODULE__ = "Lyrics"
 __HELP__ = """
 
