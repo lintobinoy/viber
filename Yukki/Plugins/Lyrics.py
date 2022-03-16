@@ -73,7 +73,7 @@ async def lyricssex(_, CallbackQuery):
             document=filename,
             caption=f"**OUTPUT:**\n\n`Lyrics`",
             quote=False,
-                 disable_web_page_preview=True,
+            disable_web_page_preview=True,
         )
         os.remove(filename)
     else:
@@ -113,7 +113,7 @@ async def lrsearch(_, message: Message):
             document=filename,
             caption=f"**OUTPUT:**\n\n`Lyrics`",
             quote=False,
-                 disable_web_page_preview=True,
+            disable_web_page_preview=True,
         )
         os.remove(filename)
     else:
