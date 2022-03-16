@@ -7,7 +7,6 @@ from pyrogram.types import Message
 from youtubesearchpython import VideosSearch
 
 from Yukki import MUSIC_BOT_NAME, app
-parse_mode="html", disable_web_page_preview=True
 __MODULE__ = "Lyrics"
 __HELP__ = """
 
@@ -73,6 +72,7 @@ async def lyricssex(_, CallbackQuery):
             document=filename,
             caption=f"**OUTPUT:**\n\n`Lyrics`",
             quote=False,
+            disable_web_page_preview=True,
         )
         os.remove(filename)
     else:
@@ -112,6 +112,7 @@ async def lrsearch(_, message: Message):
             document=filename,
             caption=f"**OUTPUT:**\n\n`Lyrics`",
             quote=False,
+            disable_web_page_preview=True,
         )
         os.remove(filename)
     else:
