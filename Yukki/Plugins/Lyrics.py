@@ -110,8 +110,8 @@ async def lrsearch(_, message: Message):
         with open(filename, "w+", encoding="utf8") as out_file:
             out_file.write(str(xxx.strip()))
         await message.reply_document(
-            document=filename,
             disable_web_page_preview=True,
+            document=filename,
             caption=f"**OUTPUT:**\n\n`Lyrics`",
             quote=False,
         )
