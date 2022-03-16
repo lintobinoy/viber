@@ -2,7 +2,6 @@ import os
 import re
 
 import lyricsgenius
-from Yukki.Inline import (lyricssex)
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from youtubesearchpython import VideosSearch
