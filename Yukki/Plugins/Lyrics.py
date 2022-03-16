@@ -66,8 +66,8 @@ async def lyricssex(_, CallbackQuery):
 
 **__Lyrics:__**
 
-def url_markup(videoid, duration, user_id, query, query_type):
-    buttons = [
+    def url_markup(videoid, duration, user_id, query, query_type):
+       buttons = [
         [
             InlineKeyboardButton(
                 text="🎵 𝙈𝙐𝙎𝙄𝘾",
