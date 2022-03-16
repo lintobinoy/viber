@@ -80,21 +80,6 @@ async def lyricssex(_, CallbackQuery):
     else:
         await CallbackQuery.message.reply_text(xxx)
 
-    def url_markup(videoid, duration, user_id, query, query_type):
-       buttons = [
-        [
-            InlineKeyboardButton(
-                text="🎵 𝙈𝙐𝙎𝙄𝘾",
-                callback_data=f"MusicStream {videoid}|{duration}|{user_id}",
-            ),
-            InlineKeyboardButton(
-                text="🎥 𝙑𝙄𝘿𝙀𝙊",
-                callback_data=f"Choose {videoid}|{duration}|{user_id}",
-            ),
-        ],
-        ]
-        return buttons
-
 
 @app.on_message(filters.command("lyrics"))
 async def lrsearch(_, message: Message):
