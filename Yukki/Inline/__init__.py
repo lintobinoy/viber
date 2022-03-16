@@ -1,4 +1,3 @@
-from .lyrics import lyricssex
 from .others import download_markup, others_markup
 from .play import (audio_markup, audio_markup2, audio_timer_markup_start,
                    primary_markup, search_markup, search_markup2,
