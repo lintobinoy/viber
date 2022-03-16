@@ -65,6 +65,20 @@ async def lyricssex(_, CallbackQuery):
 **Artist:-** {S.artist}
 
 **__Lyrics:__**
+ 
+{S.lyrics}"""
+    if len(xxx) > 4096:
+        filename = "lyrics.txt"
+        with open(filename, "w+", encoding="utf8") as out_file:
+            out_file.write(str(xxx.strip()))
+        await CallbackQuery.message.reply_document(
+            document=filename,
+            caption=f"**OUTPUT:**\n\n`Lyrics`",
+            quote=False,
+        )
+        os.remove(filename)
+    else:
+        await CallbackQuery.message.reply_text(xxx)
 
     def url_markup(videoid, duration, user_id, query, query_type):
        buttons = [
@@ -80,20 +94,6 @@ async def lyricssex(_, CallbackQuery):
         ],
         ]
         return buttons
- 
-{S.lyrics}"""
-    if len(xxx) > 4096:
-        filename = "lyrics.txt"
-        with open(filename, "w+", encoding="utf8") as out_file:
-            out_file.write(str(xxx.strip()))
-        await CallbackQuery.message.reply_document(
-            document=filename,
-            caption=f"**OUTPUT:**\n\n`Lyrics`",
-            quote=False,
-        )
-        os.remove(filename)
-    else:
-        await CallbackQuery.message.reply_text(xxx)
 
 
 @app.on_message(filters.command("lyrics"))
