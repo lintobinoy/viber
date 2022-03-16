@@ -2,6 +2,8 @@ import os
 import re
 
 import lyricsgenius
+from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
+                            InlineKeyboardMarkup, InputMediaPhoto, Message)
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from youtubesearchpython import VideosSearch
@@ -64,6 +66,21 @@ async def lyricssex(_, CallbackQuery):
 
 **__Lyrics:__**
 
+def url_markup(videoid, duration, user_id, query, query_type):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text="🎵 𝙈𝙐𝙎𝙄𝘾",
+                callback_data=f"MusicStream {videoid}|{duration}|{user_id}",
+            ),
+            InlineKeyboardButton(
+                text="🎥 𝙑𝙄𝘿𝙀𝙊",
+                callback_data=f"Choose {videoid}|{duration}|{user_id}",
+            ),
+        ],
+        ]
+        return buttons
+ 
 {S.lyrics}"""
     if len(xxx) > 4096:
         filename = "lyrics.txt"
