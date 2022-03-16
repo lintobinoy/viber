@@ -2,8 +2,7 @@ import os
 import re
 
 import lyricsgenius
-from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
-                            InlineKeyboardMarkup, InputMediaPhoto, Message)
+from Yukki.Inline import (lyricssex)
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from youtubesearchpython import VideosSearch
