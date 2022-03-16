@@ -54,7 +54,7 @@ async def lyricssex(_, CallbackQuery):
     usr = f"[{CallbackQuery.from_user.first_name}](tg://user?id={userid})"
     xxx = f"""
 **Lyrics Search Powered By {MUSIC_BOT_NAME}**
-**{MUSIC_BOT_NAME} click this name if you have any complaints about our bot (Tessa Support Group){https://t.me/TessaSupportGroup}**
+**{MUSIC_BOT_NAME} click this name if you have any complaints about our bot (Tessa Support Group){@TessaSupportGroup}**
 
 **Searched By:-** {usr}
 **Searched Song:-** __{title}__
